@@ -1,8 +1,8 @@
 # docker-centos-nginx-php
-dockerfile 基础镜像centos:latest,包含nginx，php，php-fpm
+dockerfile centos:latest, include nginx，php，php-fpm
 
-### 运行容器
+#### run 
 ```
 $ sudo docker run -d -v $pwd:/app -p 80:80 centos7-nginx-php-from-file /etc/rc.local
 ```
-$pwd 代码位置
+$pwd : php code pwd
