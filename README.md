@@ -1,8 +1,14 @@
 # docker-centos-nginx-php
-dockerfile centos:latest, include nginx，php，php-fpm
+build centos_nginx_php image
 
-#### run 
+#### quickstart
 ```
-$ sudo docker run -d -v $pwd:/app -p 80:80 centos7-nginx-php-from-file /etc/rc.local
+$ sudo sh install.sh
+$ docker run -d --name centos6nginxphpprod_con centos6nginxphpprod
 ```
-$pwd : php code pwd
+
+
+
+
+
+
