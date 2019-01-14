@@ -46,6 +46,6 @@ mkdir /usr/local/php7 && \
 --enable-xml \
 --enable-zip && make && make install
 
-cp /usr/local/src/php-7.1.20/php.ini-production /usr/local/php7/etc/php.ini
+cp /usr/local/src/php-7.1.20/php.ini-production /usr/local/php7/lib/php.ini
 cp /usr/local/php7/etc/php-fpm.conf.default /usr/local/php7/etc/php-fpm.conf
 cp /usr/local/php7/etc/php-fpm.d/www.conf.default /usr/local/php7/etc/php-fpm.d/www.conf
