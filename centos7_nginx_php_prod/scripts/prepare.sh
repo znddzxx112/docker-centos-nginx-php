@@ -1,3 +1,3 @@
 #!/bin/sh
 
-mkdir -p /app && chown fpm.fpm /app
+#mkdir -p /app && chown fpm.fpm /app
