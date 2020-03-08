@@ -1,7 +1,8 @@
 #!/bin/bash
 
-#yum -y groupinstall "Development tools" 
-yum -y install make gcc gcc-c++ pcre openssl openssl-devel zlib unzip cmake ncurses-devel libmcrypt libmcrypt-devel libjpeg libjpeg-devel libpng curl-devel libxslt-devel libpng-devel freetype freetype-devel libxml2 libxml2-devel pcre-devel autoconf automake
+apt-get install -y make gcc g++
+apt-get install -y build-essential libexpat1-dev libgeoip-dev libpng-dev libpcre3-dev libssl-dev libxml2-dev rcs zlib1g-dev libmcrypt-dev libcurl4-openssl-dev libjpeg-dev libpng-dev libwebp-dev pkg-config
+apt-get install -y libcurl4-openssl-dev libgd-dev libwebp-dev libpng++-dev libfreetype6-dev libghc-zlib-dev libmcrypt-dev libxml++2.6-dev libssl-dev libbz2-dev libxslt1-dev libxml2-dev libfreetype6-dev libxslt1-dev
 
 #curl -sSL -o /usr/local/src/php-7.1.20.tar.gz http://cn2.php.net/get/php-7.1.20.tar.gz/from/this/mirror && \
 groupadd fpm && useradd fpm -s /sbin/nologin -g fpm -M && \
@@ -44,7 +45,8 @@ mkdir /usr/local/php7 && \
 --enable-sockets \
 --enable-sysvsem \
 --enable-xml \
---enable-zip && make && make install
+--enable-zip \
+--disable-fileinfo && make && make install
 
 cp /usr/local/src/php-7.2.28/php.ini-production /usr/local/php7/lib/php.ini
 cp /usr/local/php7/etc/php-fpm.conf.default /usr/local/php7/etc/php-fpm.conf

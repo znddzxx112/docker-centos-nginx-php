@@ -1,4 +1,4 @@
-From centos7nginxphp
+From ubuntu1804nginxphp
 
 COPY ./root /
 

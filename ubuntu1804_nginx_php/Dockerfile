@@ -1,4 +1,4 @@
-From centos7nginx
+From ubuntu1804nginx
 
 COPY ./root /
 COPY ./scripts /scripts
