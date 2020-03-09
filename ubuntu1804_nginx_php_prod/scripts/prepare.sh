@@ -1,6 +1,7 @@
 #!/bin/sh
 
 groupadd nginx && useradd nginx -s /sbin/nologin -g nginx -M
+
 ln -s /usr/local/php7/bin/php /usr/local/bin/
 
 # 安装git,vim
